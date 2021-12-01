@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.menu li {
+    display: inline;
+    margin: 10px;
+    padding: 0 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 6px 0;
+    background-color: black;
+    color: white;
+}
+
+.sectionBlack {
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+        "texto1 titulo vacio2"
+        "vacio1 titulo vacio2"
+        "vacio1 titulo vacio2"
+        "vacio1 titulo texto2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 700px;
+    margin: auto;
+}
+
+#titulo {
+    font-size: 3rem;
+    font-weight: 900;
+    grid-area: titulo;
+}
+
+#texto1 {
+    grid-area: texto1;
+}
+
+#texto2 {
+    grid-area: texto2;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 700px;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+
+.responsiveImg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 2rem;
+}
